@@ -9,7 +9,7 @@
 
 تصویر زیر حاوی اطلاعات مقایسه پیاده سازی های مختلف است...
 
-![Screenshot](benchMark.png)
+![Screenshot](PolymorphismBenchmarks/benchMark.png)
 
 
 
