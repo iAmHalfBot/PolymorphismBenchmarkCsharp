@@ -1,5 +1,4 @@
-# Different Implementations of Polymorphism in C# from a Performative Standpoint
-
+# مقایسه کارایی روش‌های مختلف چندشکلی (Polymorphism) در #C
 
 
 ---
