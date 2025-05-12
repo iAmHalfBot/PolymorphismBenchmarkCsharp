@@ -4,3 +4,12 @@
 
 ---
 
+برای دیدن فایل مقایسه متد ها [اینجا](PolymorphismBenchmarks/BenchmarkSetup.cs) رو ببینید...
+
+
+تصویر زیر حاوی اطلاعات مقایسه پیاده سازی های مختلف است...
+
+![Screenshot](benchMark.png)
+
+
+
