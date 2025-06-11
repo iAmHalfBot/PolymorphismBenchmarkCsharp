@@ -32,6 +32,16 @@ public class Benchmark
             //Consumer.Consume(_direct.Compute(i));
         }
     }
+
+    [Benchmark(Baseline = true)]
+
+    public void StaticMethod()
+    {
+        for (int i = 0; i < IteratoinCount; i++)
+        {
+            StaticT.Compute(i); 
+        }
+    }
     
     [Benchmark]
     public void VirtualMethod()
@@ -126,7 +136,10 @@ public sealed class SealedImplement
     //[MethodImpl(MethodImplOptions.NoInlining)]
     public int Compute(int x) => x + 1;
 }
-
+public class StaticT
+{
+    public static int Compute(int x) => x + 1;
+}
 // public static class Consumer
 //{
  //   [MethodImpl(MethodImplOptions.NoInlining)]

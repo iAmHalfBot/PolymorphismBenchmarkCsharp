@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
 <meta charset='utf-8' />
-<title>Benchmark-20250512-204857</title>
+<title>Benchmark-20250611-194529</title>
 
 <style type="text/css">
 	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
@@ -13,23 +13,24 @@
 </head>
 <body>
 <pre><code>
-BenchmarkDotNet v0.14.0, Parrot Security 6.3 (lorikeet)
+BenchmarkDotNet v0.14.0, Parrot Security 6.4 (lorikeet)
 AMD PRO A10-9700 R7, 10 COMPUTE CORES 4C+6G, 1 CPU, 4 logical cores and 1 physical core
-.NET SDK 9.0.203
-  [Host]     : .NET 9.0.4 (9.0.425.16305), X64 RyuJIT AVX2
-  DefaultJob : .NET 9.0.4 (9.0.425.16305), X64 RyuJIT AVX2
+.NET SDK 9.0.301
+  [Host]     : .NET 9.0.6 (9.0.625.26613), X64 RyuJIT AVX2
+  DefaultJob : .NET 9.0.6 (9.0.625.26613), X64 RyuJIT AVX2
 </code></pre>
 <pre><code></code></pre>
 
 <table>
-<thead><tr><th>Method   </th><th>Mean</th><th>Error</th><th>StdDev</th><th>Rank</th><th>Allocated</th>
+<thead><tr><th>Method   </th><th>Mean</th><th>Error</th><th>StdDev</th><th>Ratio</th><th>RatioSD</th><th>Rank</th><th>Allocated</th><th>Alloc Ratio</th>
 </tr>
-</thead><tbody><tr><td>SealedMethod</td><td>360.8 &mu;s</td><td>7.16 &mu;s</td><td>12.16 &mu;s</td><td>1</td><td>-</td>
-</tr><tr><td>DirectMethod</td><td>360.9 &mu;s</td><td>7.12 &mu;s</td><td>16.77 &mu;s</td><td>1</td><td>-</td>
-</tr><tr><td>AbstractMethod</td><td>568.0 &mu;s</td><td>8.76 &mu;s</td><td>8.19 &mu;s</td><td>2</td><td>-</td>
-</tr><tr><td>InterfaceMethod</td><td>575.0 &mu;s</td><td>11.47 &mu;s</td><td>16.45 &mu;s</td><td>2</td><td>1 B</td>
-</tr><tr><td>VirtualMethod</td><td>584.2 &mu;s</td><td>9.82 &mu;s</td><td>8.71 &mu;s</td><td>2</td><td>1 B</td>
-</tr><tr><td>DynamicMethod</td><td>3,784.3 &mu;s</td><td>14.19 &mu;s</td><td>13.27 &mu;s</td><td>3</td><td>3 B</td>
+</thead><tbody><tr><td>StaticMethod</td><td>366.4 &mu;s</td><td>6.78 &mu;s</td><td>6.34 &mu;s</td><td>1.00</td><td>0.02</td><td>1</td><td>-</td><td>NA</td>
+</tr><tr><td>SealedMethod</td><td>375.9 &mu;s</td><td>7.51 &mu;s</td><td>14.47 &mu;s</td><td>1.03</td><td>0.04</td><td>1</td><td>-</td><td>NA</td>
+</tr><tr><td>DirectMethod</td><td>382.7 &mu;s</td><td>7.90 &mu;s</td><td>21.64 &mu;s</td><td>1.04</td><td>0.06</td><td>1</td><td>-</td><td>NA</td>
+</tr><tr><td>VirtualMethod</td><td>578.1 &mu;s</td><td>5.54 &mu;s</td><td>4.63 &mu;s</td><td>1.58</td><td>0.03</td><td>2</td><td>-</td><td>NA</td>
+</tr><tr><td>AbstractMethod</td><td>594.0 &mu;s</td><td>11.56 &mu;s</td><td>12.37 &mu;s</td><td>1.62</td><td>0.04</td><td>2</td><td>1 B</td><td>NA</td>
+</tr><tr><td>InterfaceMethod</td><td>598.3 &mu;s</td><td>7.01 &mu;s</td><td>6.55 &mu;s</td><td>1.63</td><td>0.03</td><td>2</td><td>1 B</td><td>NA</td>
+</tr><tr><td>DynamicMethod</td><td>3,866.8 &mu;s</td><td>18.68 &mu;s</td><td>16.56 &mu;s</td><td>10.56</td><td>0.18</td><td>3</td><td>2 B</td><td>NA</td>
 </tr></tbody></table>
 </body>
 </html>
