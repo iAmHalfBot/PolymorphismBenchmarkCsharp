@@ -34,7 +34,7 @@
 
 تصویر زیر حاوی اطلاعات مقایسه پیاده سازی های مختلف است...
 
-![Screenshot](PolymorphismBenchmarks/benchMark.png)
+![Screenshot](PolymorphismBenchmarks/csharp_poly_benchmark.png)
 
 
 
